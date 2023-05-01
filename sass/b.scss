@@ -1,0 +1,9 @@
+$var-body-color: darkblue;
+$var-text-color: white;
+$var-body-padding: 45px;
+
+body {
+  background: $var-body-color;
+  color: $var-text-color;
+  padding: $var-body-padding;
+}

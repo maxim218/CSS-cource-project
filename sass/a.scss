@@ -1,0 +1,51 @@
+$var-body-color: gray;
+$var-body-family: Geneva, Arial, Helvetica, sans-serif;
+$var-body-padding: 30px;
+
+$var-first-color: green;
+$var-second-color: yellow;
+$var-boxes-padding: 16px;
+
+body {
+  background: $var-body-color;
+  font-family: $var-body-family;
+  padding: $var-body-padding;
+}
+
+#first-box-id {
+  background: $var-first-color;
+  padding: $var-boxes-padding;
+
+  .cl-cl-1 {
+    font-weight: bold;
+    color: white;
+  }
+}
+
+#second-box-id {
+  background: $var-second-color;
+  padding: $var-boxes-padding;
+
+  .cl-cl-1 {
+    font-weight: bold;
+    text-decoration: underline;
+  }
+}
+
+@mixin my-text-properties() {
+  font-family: Impact, serif;
+  font-style: italic;
+  color: orange;
+}
+
+#third-box-id {
+  padding: 8px;
+  background: wheat;
+  @include my-text-properties;
+}
+
+#fourth-box-id {
+  padding: 8px;
+  background: bisque;
+  @include my-text-properties;
+}

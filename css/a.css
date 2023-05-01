@@ -1,0 +1,41 @@
+body {
+  background: gray;
+  font-family: Geneva, Arial, Helvetica, sans-serif;
+  padding: 30px;
+}
+
+#first-box-id {
+  background: green;
+  padding: 16px;
+}
+#first-box-id .cl-cl-1 {
+  font-weight: bold;
+  color: white;
+}
+
+#second-box-id {
+  background: yellow;
+  padding: 16px;
+}
+#second-box-id .cl-cl-1 {
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+#third-box-id {
+  padding: 8px;
+  background: wheat;
+  font-family: Impact, serif;
+  font-style: italic;
+  color: orange;
+}
+
+#fourth-box-id {
+  padding: 8px;
+  background: bisque;
+  font-family: Impact, serif;
+  font-style: italic;
+  color: orange;
+}
+
+/*# sourceMappingURL=a.css.map */
