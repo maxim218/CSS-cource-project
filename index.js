@@ -17,3 +17,8 @@ app.get("/css/:cssName", function (request, response) {
     return response.sendFile(__dirname + "/css/" + request.params['cssName']);
 });
 
+
+app.get("/image/:imageName", function (request, response) {
+    return response.sendFile(__dirname + "/images/" + request.params['imageName']);
+});
+
