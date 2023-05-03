@@ -1,0 +1,35 @@
+$var-body-color: #999999;
+$var-basic-font-size: 20px;
+
+html {
+  font-size: $var-basic-font-size;
+}
+
+body {
+  background: $var-body-color;
+  font-size: $var-basic-font-size;
+}
+
+.class-vertical-distance {
+  padding-top: 1.5rem;
+}
+
+h1 {
+  font-size: 4rem;
+}
+
+.class-rem-1 {
+  font-size: 1rem;
+}
+
+.class-rem-2 {
+  font-size: 2rem;
+}
+
+.class-rem-3 {
+  font-size: 3rem;
+}
+
+.class-rem-4 {
+  font-size: 4rem;
+}

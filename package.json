@@ -6,7 +6,8 @@
   "scripts": {
     "build-a": "sass ./sass/a.scss ./css/a.css",
     "build-b": "sass ./sass/b.scss ./css/b.css",
-    "prestart": "npm run build-a && npm run build-b",
+    "build-c": "sass ./sass/c.scss ./css/c.css ",
+    "prestart": "npm run build-a && npm run build-b && npm run build-c",
     "start": "node index.js"
   },
   "keywords": [],
