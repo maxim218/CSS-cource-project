@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Page D</title>
+    <link rel="stylesheet" href="/css/d.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+
+<div id="header-box-id">
+    <div id="header-box__left-id">
+        <img src="/image/logoTitle.PNG">
+    </div>
+    <div id="header-box__right-id">
+        <a href="#">Main menu</a>
+        <a href="#">About company</a>
+        <a href="#">Our products</a>
+        <img src="/image/burger.PNG" onclick="openDialogWindow()">
+    </div>
+</div>
+
+<div id="main-label-box-id">
+    <span>It is the main label of the appplication</span>
+</div>
+
+<div id="cards-content-box-id">
+    <div class="cards-content-box-id__card-class">
+        <span class="card-header">It is the First card</span>
+        <div class="card-content">
+            <p>It is card content</p>
+            <p>It is very important string of card content</p>
+            <p>Do not forget this string of card content too</p>
+            <p>It is end of the card</p>
+        </div>
+    </div>
+    <div class="cards-content-box-id__card-class">
+        <span class="card-header">It is the Second card</span>
+        <div class="card-content">
+            <p>It is card content</p>
+            <p>It is very important string of card content</p>
+            <p>Do not forget this string of card content too</p>
+            <p>It is end of the card</p>
+        </div>
+    </div>
+    <div class="cards-content-box-id__card-class">
+        <span class="card-header">It is the Third card</span>
+        <div class="card-content">
+            <p>It is card content</p>
+            <p>It is very important string of card content</p>
+            <p>Do not forget this string of card content too</p>
+            <p>It is end of the card</p>
+        </div>
+    </div>
+</div>
+
+<div id="huge-box-cover-id" style="display: none;">
+    <div id="dialog-box-id">
+        <span class="dialog-box-id__header-class">Choose action</span>
+        <a href="#">Main menu</a>
+        <a href="#">About company</a>
+        <a href="#">Our products</a>
+        <span class="dialog-box-id__clode-dialog-class" onclick="closeDialogWindow()">Close dialog</span>
+    </div>
+</div>
+
+<script>
+    "use strict";
+
+    function openDialogWindow() {
+        const box = document.getElementById("huge-box-cover-id");
+        box.style.display = "flex";
+    }
+
+    function closeDialogWindow() {
+        const box = document.getElementById("huge-box-cover-id");
+        box.style.display = "none";
+    }
+</script>
+
+
+</body>
+</html>

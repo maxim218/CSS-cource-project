@@ -7,7 +7,8 @@
     "build-a": "sass ./sass/a.scss ./css/a.css",
     "build-b": "sass ./sass/b.scss ./css/b.css",
     "build-c": "sass ./sass/c.scss ./css/c.css ",
-    "prestart": "npm run build-a && npm run build-b && npm run build-c",
+    "build-d": "sass ./sass/d.scss ./css/d.css ",
+    "prestart": "npm run build-a && npm run build-b && npm run build-c && npm run build-d",
     "start": "node index.js"
   },
   "keywords": [],
