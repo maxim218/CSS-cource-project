@@ -9,7 +9,8 @@
     "build-c": "sass ./sass/c.scss ./css/c.css ",
     "build-d": "sass ./sass/d.scss ./css/d.css ",
     "build-e": "sass ./sass/e.scss ./css/e.css ",
-    "prestart": "npm run build-a && npm run build-b && npm run build-c && npm run build-d && npm run build-e",
+    "build-f": "sass ./sass/f.scss ./css/f.css ",
+    "prestart": "npm run build-a && npm run build-b && npm run build-c && npm run build-d && npm run build-e && npm run build-f",
     "start": "node index.js"
   },
   "keywords": [],

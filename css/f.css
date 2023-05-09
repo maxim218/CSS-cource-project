@@ -1,0 +1,192 @@
+html {
+  font-size: 20px;
+}
+
+body {
+  font-size: 20px;
+  overflow-x: hidden;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  font-family: Geneva, Arial, Helvetica, sans-serif;
+}
+
+body {
+  background: gray;
+}
+
+#main-title-box-id {
+  margin: 0;
+  padding: 1.5rem;
+  background: blueviolet;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#main-title-box-id span {
+  font-size: 2rem;
+  color: white;
+  font-weight: bold;
+}
+
+@media (max-width: 35rem) {
+  #main-title-box-id span {
+    font-size: 1.4rem;
+  }
+}
+.pair-image-text-content-class {
+  display: grid;
+  grid-template-columns: 70% 30%;
+  column-gap: 0;
+  justify-content: center;
+  align-items: center;
+  background: wheat;
+  padding: 0;
+  margin: 0;
+}
+.pair-image-text-content-class .wrapper-for-image-class {
+  padding: 0;
+  margin: 0;
+  transform: skew(-25deg) translate(-20%, 0);
+  overflow: hidden;
+}
+.pair-image-text-content-class .wrapper-for-image-class .image-content-class {
+  background-image: url("/image/hero-doom.PNG");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  min-height: 35rem;
+  padding: 0;
+  margin: 0;
+  transform: skew(25deg) scale(1.4);
+}
+.pair-image-text-content-class .text-content-class {
+  margin-left: -6rem;
+  padding-right: 3rem;
+}
+.pair-image-text-content-class .text-content-class .header-class {
+  text-align: center;
+  font-weight: bold;
+  font-size: 1.8rem;
+}
+.pair-image-text-content-class .text-content-class .content-class {
+  text-align: left;
+  font-size: 1.4rem;
+}
+
+@media (max-width: 76rem) {
+  .pair-image-text-content-class {
+    grid-template-columns: 90%;
+  }
+  .pair-image-text-content-class .text-content-class {
+    margin-left: 0;
+    margin-right: 0;
+    margin: auto;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    max-width: 30rem;
+  }
+  .pair-image-text-content-class .wrapper-for-image-class {
+    transform: none;
+    padding-top: 1rem;
+  }
+  .pair-image-text-content-class .wrapper-for-image-class .image-content-class {
+    transform: none;
+    border-radius: 0.4rem;
+    min-height: 25rem;
+  }
+}
+@media (max-width: 35rem) {
+  .pair-image-text-content-class .text-content-class .header-class {
+    font-size: 1.4rem;
+  }
+  .pair-image-text-content-class .text-content-class .content-class {
+    font-size: 1rem;
+  }
+  .pair-image-text-content-class .wrapper-for-image-class .image-content-class {
+    min-height: 15rem;
+  }
+}
+#last-box-id {
+  background: gray;
+  padding: 0.1rem;
+  padding-bottom: 0.1rem;
+  text-align: center;
+  font-size: 1.2rem;
+}
+#last-box-id .button-class {
+  display: none;
+  padding: 0.5rem;
+  background: white;
+  color: darkblue;
+  border-radius: 0.4rem;
+  cursor: pointer;
+}
+
+#bottom-buy-now-box-id {
+  background: gray;
+  padding: 0.5rem;
+  display: grid;
+  grid-template-columns: 40% 30%;
+  column-gap: 1rem;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.2rem;
+  color: white;
+}
+#bottom-buy-now-box-id .button-class {
+  display: inline-block;
+  padding: 0.5rem;
+  background: white;
+  color: darkblue;
+  border-radius: 0.4rem;
+  margin-left: 1rem;
+  cursor: pointer;
+}
+#bottom-buy-now-box-id .bottom-label-left-class {
+  margin-top: -2.5rem;
+}
+#bottom-buy-now-box-id .bottom-image-content-class img {
+  width: 12rem;
+  margin-top: -5.5rem;
+  transform: rotate(20deg);
+}
+
+@media (max-width: 85rem) {
+  #bottom-buy-now-box-id {
+    padding: 1rem;
+    grid-template-columns: 92%;
+  }
+  #bottom-buy-now-box-id .button-class {
+    display: none;
+  }
+  #bottom-buy-now-box-id .bottom-label-left-class {
+    margin-top: 0;
+    margin-bottom: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  #bottom-buy-now-box-id .bottom-image-content-class img {
+    margin-top: 0.5rem;
+    margin: auto;
+    transform: none;
+    width: 8rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+@media (max-width: 85rem) {
+  #last-box-id {
+    padding-bottom: 2rem;
+  }
+  #last-box-id .button-class {
+    display: inline-block;
+  }
+}
+
+/*# sourceMappingURL=f.css.map */
