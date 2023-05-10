@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/g.css">
+    <title>Page G</title>
+</head>
+<body>
+ 
+<div id="main-header-box-id">
+    <span>Welcome to page G</span>
+</div> 
+
+<div id="first-box-id" class="observe-me-class">
+    <div class="first-box-id__text-box-class">
+        <p>I love JavaScript programming</p>
+        <p>CSS technology is wonderful</p>
+    </div>
+</div>
+
+<div id="second-box-id" class="observe-me-class">
+    <div>
+        <div class="left-column__wrapper-content-cl">
+            <p>It's important to note that this method does not replace a class. It simply adds the class, appending it to any which may already be assigned to the elements.</p>
+            <p>Once the property was changed, it was the browser that updated the attribute accordingly. An implication of this behavior was that this method only worked for documents with HTML DOM semantics.</p>
+            <p>Receives the index position of the element in the set and the existing class name(s) as arguments.</p>
+        </div>
+    </div>
+    <div>
+        <div class="right-column__wrapper-content-cl">
+            <img src="/image/girl-computer.PNG">
+        </div>
+    </div>
+</div>
+
+<div id="third-box-id" class="observe-me-class">
+    <img id="third-box-id__image-doom" src="/image/hero-doom.PNG">
+</div>
+
+<div id="fourth-box-id" class="observe-me-class">
+    <span id="fourth-box-id__big-label">It is animated bottom label =)</span>
+</div>
+
+<script src="/jquery-library"></script>
+
+<script>
+    "use strict";
+
+    // functions for running animations
+    const runFirst = () => $(".first-box-id__text-box-class").addClass("animation-one-class");
+    const runSecond = () => {
+        $(".left-column__wrapper-content-cl").addClass("animation-two-class");
+        $(".right-column__wrapper-content-cl").addClass("animation-two-class");
+    };
+    const runThird = () => $("#third-box-id__image-doom").addClass("animation-three-class");
+    const runFourth = () => $("#fourth-box-id__big-label").addClass("animation-four-class");
+
+    // when we see element on the screen
+    function onShowElement(target) {
+        // get id
+        const id = target.id;
+        console.log("Id: " + id);
+        // run animation
+        if("first-box-id" === id) return runFirst();
+        if("second-box-id" === id) return runSecond();
+        if("third-box-id" === id) return runThird();
+        if("fourth-box-id" === id) return runFourth();
+    }
+
+    // create observer
+    const observer = new IntersectionObserver((entries, observer) => {
+        entries.forEach(entry => {
+            if(entry.isIntersecting) onShowElement(entry.target);
+        });
+    });
+
+    // observe elements witl class
+    document.querySelectorAll(".observe-me-class").forEach(element => observer.observe(element));
+</script>
+
+</body>
+</html>

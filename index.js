@@ -22,3 +22,7 @@ app.get("/image/:imageName", function (request, response) {
     return response.sendFile(__dirname + "/images/" + request.params['imageName']);
 });
 
+app.get("/jquery-library", function(request, response) {
+    return response.sendFile(__dirname + "/" + "jquery-3.6.4.min.js");
+});
+

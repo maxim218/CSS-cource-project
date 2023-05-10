@@ -15,6 +15,7 @@ sass ./sass/c.scss ./css/c.css
 sass ./sass/d.scss ./css/d.css 
 sass ./sass/e.scss ./css/e.css 
 sass ./sass/f.scss ./css/f.css 
+sass ./sass/g.scss ./css/g.css 
 ```
 
 Good article about Grid
@@ -27,5 +28,11 @@ Transforms good article
 
 ```
 https://developer.mozilla.org/en-US/docs/Web/CSS/transform
+```
+
+Good article about scrolling
+
+```
+https://css-tricks.com/scroll-triggered-animation-vanilla-javascript/ 
 ```
 
