@@ -36,3 +36,16 @@ Good article about scrolling
 https://css-tricks.com/scroll-triggered-animation-vanilla-javascript/ 
 ```
 
+About prefixes
+
+```
+https://github.com/postcss/autoprefixer
+https://autoprefixer.github.io/ 
+```
+
+Can I use
+
+```
+https://caniuse.com/
+```
+
